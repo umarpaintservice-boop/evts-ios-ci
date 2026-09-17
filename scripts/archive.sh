@@ -16,7 +16,6 @@ xcodebuild -project IOSBuild/Unity-iPhone.xcodeproj \
   DEVELOPMENT_TEAM="$TEAM_ID" \
   CODE_SIGN_STYLE=Automatic \
   PROVISIONING_PROFILE_SPECIFIER="" \
-  PRODUCT_BUNDLE_IDENTIFIER=com.evts.tradegame \
   archive | tee build/archive.log | tail -40
 
 test -d build/EVTS.xcarchive/Products/Applications
