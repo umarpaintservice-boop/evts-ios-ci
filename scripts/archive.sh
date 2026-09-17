@@ -15,7 +15,6 @@ xcodebuild -project IOSBuild/Unity-iPhone.xcodeproj \
   -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
   DEVELOPMENT_TEAM="$TEAM_ID" \
   CODE_SIGN_STYLE=Automatic \
-  CODE_SIGN_IDENTITY="Apple Distribution" \
   PROVISIONING_PROFILE_SPECIFIER="" \
   PRODUCT_BUNDLE_IDENTIFIER=com.evts.tradegame \
   archive | tee build/archive.log | tail -40
